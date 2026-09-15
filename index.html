@@ -1,7 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CISC 322/326 :: g(ai)ls </title>
+<style>
+  :root{
+    --cyan: #00c2d1;
+    --pink: #e6007a;
+    --violet: #6b3fd4;
+    --text: #111111;
+    --text-dim: #666666;
+    --line: #e5e5e5;
+  }
+
+  body{
+    margin:0;
+    background: #ffffff;
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  a{ color: var(--pink); text-decoration: none; }
+  a:hover{ text-decoration: underline; }
+
+  .wrap{
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 72px 24px 96px;
+  }
+
+  header{
+    margin-bottom: 48px;
+  }
+
+  h1{
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 0 0 6px;
+  }
+
+  .team-name{
+    color: var(--text-dim);
+    margin: 0 0 20px;
+  }
+  .team-name strong{ color: var(--violet); }
+
+  nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+  }
+  nav a{ color: var(--cyan); font-size: 0.9rem; }
+
+  section{ margin-bottom: 44px; }
+
+  h2{
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--violet);
+    margin-bottom: 12px;
+  }
+
+  ul.plain{ list-style: none; padding: 0; margin: 0; }
+  ul.plain li{ margin-bottom: 6px; }
+
+  .item{ margin-bottom: 16px; }
+  .item .title{ font-weight: 600; margin: 0 0 2px; }
+  .item .sub{ color: var(--text-dim); font-size: 0.9rem; margin: 0 0 4px; }
+
+  .video{ margin-bottom: 20px; }
+  .video iframe{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    display: block;
+  }
+  .video p{ color: var(--text-dim); font-size: 0.9rem; margin: 8px 0 0; }
+
+  .member{ margin-bottom: 8px; }
+  .member .name{ font-weight: 600; }
+  .member .mail{ color: var(--text-dim); font-size: 0.9rem; }
+  .member .mail:hover{ color: var(--pink); }
+
+  footer{
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--text-dim);
+    font-size: 0.8rem;
+  }
+</style>
 </head>
 <body>
     <h1>Hello.... Welcome to the g(ai)ls website!</h1>
