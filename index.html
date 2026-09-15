@@ -6,95 +6,224 @@
 <title>CISC 322/326 :: g(ai)ls</title>
 <style>
   :root{
-    --cyan: #00c2d1;
-    --pink: #e6007a;
-    --violet: #6b3fd4;
-    --text: #111111;
-    --text-dim: #666666;
-    --line: #e5e5e5;
+    --cyan: #0090a0;
+    --pink: #c40068;
+    --violet: #5a2fc2;
+    --text: #1a1a1a;
+    --text-dim: #55555a;
+    --line: #e2e2e2;
   }
+
+  *{ box-sizing: border-box; }
 
   body{
     margin:0;
     background: #ffffff;
     color: var(--text);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-    line-height: 1.6;
+    font-size: 17px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
   }
 
   a{ color: var(--pink); text-decoration: none; }
-  a:hover{ text-decoration: underline; }
+  a:hover, a:focus-visible{ text-decoration: underline; }
+  a:focus-visible{ outline: 2px solid var(--violet); outline-offset: 2px; }
 
   .wrap{
-    max-width: 640px;
+    max-width: 680px;
     margin: 0 auto;
     padding: 72px 24px 96px;
   }
 
   header{
-    margin-bottom: 48px;
+    margin-bottom: 56px;
   }
 
   h1{
     font-weight: 700;
-    font-size: 2rem;
-    margin: 0 0 6px;
+    font-size: 2.1rem;
+    line-height: 1.3;
+    margin: 0 0 10px;
   }
 
   .team-name{
     color: var(--text-dim);
-    margin: 0 0 20px;
+    font-size: 1.05rem;
+    margin: 0 0 24px;
   }
-  .team-name strong{ color: var(--violet); }
+  .team-name strong{ color: var(--violet); font-weight: 700; }
 
   nav{
     display: flex;
     flex-wrap: wrap;
-    gap: 6px 18px;
+    gap: 10px 22px;
   }
-  nav a{ color: var(--cyan); font-size: 0.9rem; }
+  nav a{
+    color: var(--cyan);
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
 
   section{
-    margin-bottom: 28px;
-    padding: 24px 28px;
+    margin-bottom: 32px;
+    padding: 28px 32px;
     background: #fafafa;
     border: 1px solid var(--line);
-    border-radius: 8px;
+    border-radius: 10px;
   }
 
   h2{
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 700;
     color: var(--violet);
-    margin-bottom: 12px;
+    margin: 0 0 18px;
   }
 
   ul.plain{ list-style: none; padding: 0; margin: 0; }
-  ul.plain li{ margin-bottom: 6px; }
+  ul.plain li{ margin-bottom: 10px; }
+  ul.plain li:last-child{ margin-bottom: 0; }
 
-  .item{ margin-bottom: 16px; }
-  .item .title{ font-weight: 600; margin: 0 0 2px; }
-  .item .sub{ color: var(--text-dim); font-size: 0.9rem; margin: 0 0 4px; }
+  .item{ margin-bottom: 20px; }
+  .item:last-child{ margin-bottom: 0; }
+  .item .title{ font-weight: 700; margin: 0 0 4px; }
+  .item .sub{ color: var(--text-dim); font-size: 0.95rem; margin: 0 0 6px; }
 
-  .video{ margin-bottom: 20px; }
+  .video{ margin-bottom: 24px; }
+  .video:last-child{ margin-bottom: 0; }
   .video iframe{
     width: 100%;
     aspect-ratio: 16 / 9;
     border: 0;
+    border-radius: 6px;
     display: block;
   }
-  .video p{ color: var(--text-dim); font-size: 0.9rem; margin: 8px 0 0; }
+  .video p{ color: var(--text-dim); font-size: 0.95rem; margin: 10px 0 0; }
 
-  .member{ margin-bottom: 8px; }
+  .member{
+    margin-bottom: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 8px;
+  }
+  .member:last-child{ margin-bottom: 0; }
   .member .name{ font-weight: 600; }
-  .member .mail{ color: var(--text-dim); font-size: 0.9rem; }
+  .member .sep{ color: var(--text-dim); }
+  .member .mail{ color: var(--text-dim); font-size: 0.95rem; }
   .member .mail:hover{ color: var(--pink); }
 
   footer{
     margin-top: 56px;
-    padding-top: 20px;
+    padding-top: 24px;
     border-top: 1px solid var(--line);
     color: var(--text-dim);
-    font-size: 0.8rem;
+    font-size: 0.85rem;
   }
-</style></head><body><div class="wrap">  <header>    <h1>CISC 322/326 Group Project</h1>    <p class="team-name">Team Name: <strong> g(ai)ls </strong></p>    <nav>      <a href="#documentation">Documentation</a>      <a href="#reports">Reports</a>      <a href="#slides">Slides</a>      <a href="#videos">Videos</a>      <a href="#team">Team</a>    </nav>  </header>  <section id="documentation">    <h2>Documentation</h2>    <ul class="plain">      <li><a href="https://link-to-relevant-docs.com">Relevant Documentation</a></li>      <li><a href="https://link-to-more-docs.com">Additional Resources</a></li>    </ul>  </section>  <section id="reports">    <h2>Reports</h2>    <div class="item">      <p class="title">Report 1</p>      <p class="sub">Conceptual Architecture Report</p>      <a href="https://kia8804.github.io/cisc322group4/reports/report1.pdf">Open PDF</a>    </div>    <div class="item">      <p class="title">Report 2</p>      <p class="sub">Concrete Architecture Report</p>      <a href="https://kia8804.github.io/cisc322group4/reports/report2.pdf">Open PDF</a>    </div>    <div class="item">      <p class="title">Report 3</p>      <p class="sub">Final Report</p>      <a href="https://kia8804.github.io/cisc322group4/reports/report3.pdf">Open PDF</a>    </div>  </section>  <section id="slides">    <h2>Slides</h2>    <div class="item">      <p class="title">Presentation 1</p>      <p class="sub">Conceptual Architecture Slides</p>      <a href="https://kia8804.github.io/cisc322group4/slides/presentation1.pdf">Open PDF</a>    </div>    <div class="item">      <p class="title">Presentation 2</p>      <p class="sub">Concrete Architecture Slides</p>      <a href="https://kia8804.github.io/cisc322group4/slides/presentation2.pdf">Open PDF</a>    </div>    <div class="item">      <p class="title">Presentation 3</p>      <p class="sub">Final Presentation Slides</p>      <a href="https://kia8804.github.io/cisc322group4/slides/presentation3.pdf">Open PDF</a>    </div>  </section>  <section id="videos">    <h2>Presentation Videos</h2>    <div class="video">      <iframe src="https://www.youtube.com/embed/EJvA7kuxuZo" title="Conceptual Architecture Video" allowfullscreen></iframe>      <p>Conceptual Architecture Video</p>    </div>    <div class="video">      <iframe src="https://www.youtube.com/embed/o0zSYzmYMBo?si=Loqb6R68G1Vr7XnQ" title="Concrete Architecture Video" allowfullscreen></iframe>      <p>Concrete Architecture Video</p>    </div>    <div class="video">      <iframe src="https://www.youtube.com/embed/myR06YRN8HA?si=FpXz-8wtxaoTEiFE" title="Final Presentation Video" allowfullscreen></iframe>      <p>Final Presentation Video</p>    </div>  </section>  <section id="team">    <h2>Meet the Team</h2>    <div class="member">      <span class="name">Akshay Kapal</span> — <a class="mail" href="mailto:akshay.kapal@queensu.ca">akshay.kapal@queensu.ca</a>    </div>    <div class="member">      <span class="name">Ava Nikolaus</span> — <a class="mail" href="mailto:ava.nikolaus@queensu.ca">ava.nikolaus@queensu.ca</a>    </div>    <div class="member">      <span class="name">Gertrudis Koukharsky</span> — <a class="mail" href="mailto:23xht3@queensu.ca">23xht3@queensu.ca</a>    </div>       <div class="member">      <span class="name">Hunter Anwar</span> — <a class="mail" href="mailto:23cj68@queensu.ca">23cj68@queensu.ca</a>    </div>    <div class="member">      <span class="name">Manreet Gill</span> — <a class="mail" href="mailto:manreet.gill@queensu.ca">manreet.gill@queensu.ca</a>    </div>    <div class="member">      <span class="name">Sophie Liang</span> — <a class="mail" href="mailto:23xgt4@queensu.ca">23xgt4@queensu.ca</a>    </div>  </section>  <footer>    CISC 322/326 — g(ai)ls · Queen's University  </footer></div></body></html>
+
+  @media (max-width: 480px){
+    section{ padding: 22px 20px; }
+    .wrap{ padding: 48px 18px 72px; }
+  }
+</style></head><body><div class="wrap">
+
+  <header>
+    <h1>CISC 322/326 Group Project</h1>
+    <p class="team-name">Team Name: <strong>g(ai)ls</strong></p>
+    <nav>
+      <a href="#documentation">Documentation</a>
+      <a href="#reports">Reports</a>
+      <a href="#slides">Slides</a>
+      <a href="#videos">Videos</a>
+      <a href="#team">Team</a>
+    </nav>
+  </header>
+
+  <section id="documentation">
+    <h2>Documentation</h2>
+    <ul class="plain">
+      <li><a href="https://link-to-relevant-docs.com">Relevant Documentation</a></li>
+      <li><a href="https://link-to-more-docs.com">Additional Resources</a></li>
+    </ul>
+  </section>
+
+  <section id="reports">
+    <h2>Reports</h2>
+    <div class="item">
+      <p class="title">Report 1</p>
+      <p class="sub">Conceptual Architecture Report</p>
+      <a href="https://kia8804.github.io/cisc322group4/reports/report1.pdf">Open PDF</a>
+    </div>
+    <div class="item">
+      <p class="title">Report 2</p>
+      <p class="sub">Concrete Architecture Report</p>
+      <a href="https://kia8804.github.io/cisc322group4/reports/report2.pdf">Open PDF</a>
+    </div>
+    <div class="item">
+      <p class="title">Report 3</p>
+      <p class="sub">Final Report</p>
+      <a href="https://kia8804.github.io/cisc322group4/reports/report3.pdf">Open PDF</a>
+    </div>
+  </section>
+
+  <section id="slides">
+    <h2>Slides</h2>
+    <div class="item">
+      <p class="title">Presentation 1</p>
+      <p class="sub">Conceptual Architecture Slides</p>
+      <a href="https://kia8804.github.io/cisc322group4/slides/presentation1.pdf">Open PDF</a>
+    </div>
+    <div class="item">
+      <p class="title">Presentation 2</p>
+      <p class="sub">Concrete Architecture Slides</p>
+      <a href="https://kia8804.github.io/cisc322group4/slides/presentation2.pdf">Open PDF</a>
+    </div>
+    <div class="item">
+      <p class="title">Presentation 3</p>
+      <p class="sub">Final Presentation Slides</p>
+      <a href="https://kia8804.github.io/cisc322group4/slides/presentation3.pdf">Open PDF</a>
+    </div>
+  </section>
+
+  <section id="videos">
+    <h2>Presentation Videos</h2>
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/EJvA7kuxuZo" title="Conceptual Architecture Video" allowfullscreen></iframe>
+      <p>Conceptual Architecture Video</p>
+    </div>
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/o0zSYzmYMBo?si=Loqb6R68G1Vr7XnQ" title="Concrete Architecture Video" allowfullscreen></iframe>
+      <p>Concrete Architecture Video</p>
+    </div>
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/myR06YRN8HA?si=FpXz-8wtxaoTEiFE" title="Final Presentation Video" allowfullscreen></iframe>
+      <p>Final Presentation Video</p>
+    </div>
+  </section>
+
+  <section id="team">
+    <h2>Meet the Team</h2>
+    <div class="member">
+      <span class="name">Akshay Kapal</span><span class="sep">—</span><a class="mail" href="mailto:akshay.kapal@queensu.ca">akshay.kapal@queensu.ca</a>
+    </div>
+    <div class="member">
+      <span class="name">Ava Nikolaus</span><span class="sep">—</span><a class="mail" href="mailto:ava.nikolaus@queensu.ca">ava.nikolaus@queensu.ca</a>
+    </div>
+    <div class="member">
+      <span class="name">Gertrudis Koukharsky</span><span class="sep">—</span><a class="mail" href="mailto:23xht3@queensu.ca">23xht3@queensu.ca</a>
+    </div>
+    <div class="member">
+      <span class="name">Hunter Anwar</span><span class="sep">—</span><a class="mail" href="mailto:23cj68@queensu.ca">23cj68@queensu.ca</a>
+    </div>
+    <div class="member">
+      <span class="name">Manreet Gill</span><span class="sep">—</span><a class="mail" href="mailto:manreet.gill@queensu.ca">manreet.gill@queensu.ca</a>
+    </div>
+    <div class="member">
+      <span class="name">Sophie Liang</span><span class="sep">—</span><a class="mail" href="mailto:23xgt4@queensu.ca">23xgt4@queensu.ca</a>
+    </div>
+  </section>
+
+  <footer>
+    CISC 322/326 — g(ai)ls · Queen's University
+  </footer>
+
+</div></body></html>
