@@ -124,6 +124,24 @@
     section{ padding: 22px 20px; }
     .wrap{ padding: 48px 18px 72px; }
   }
+
+  /* ---- Added: compact helpful-links list ---- */
+  .linklist{ list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+  .linklist a{
+    display: block;
+    padding: 14px 18px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--text);
+    background: #ffffff;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+  }
+  .linklist a:hover, .linklist a:focus-visible{
+    color: var(--violet);
+    border-color: var(--violet);
+    text-decoration: none;
+  }
 </style></head><body><div class="wrap">
 
   <header>
@@ -135,16 +153,9 @@
       <a href="#slides">Slides</a>
       <a href="#videos">Videos</a>
       <a href="#team">Team</a>
+      <a href="#helpful-links">Helpful Links</a>
     </nav>
   </header>
-
-  <section id="documentation">
-    <h2>Documentation</h2>
-    <ul class="plain">
-      <li><a href="https://link-to-relevant-docs.com">Relevant Documentation</a></li>
-      <li><a href="https://link-to-more-docs.com">Additional Resources</a></li>
-    </ul>
-  </section>
 
   <section id="reports">
     <h2>Reports</h2>
@@ -221,6 +232,20 @@
     <div class="member">
       <span class="name">Sophie Liang</span><span class="sep">—</span><a class="mail" href="mailto:23xgt4@queensu.ca">23xgt4@queensu.ca</a>
     </div>
+  </section>
+
+    <section id="helpful-links">
+    <h2>Helpful Links and Resources</h2>
+    <ul class="linklist">
+      <li><a href="https://github.com/wezterm/wezterm">WezTerm - GitHub (Source Code)</a></li>
+      <li><a href="https://wezterm.org/">WezTerm - Official Docs</a></li>
+      <li><a href="https://wezterm.org/what-is-a-terminal.html">WezTerm - What is a Terminal?</a></li>
+      <li><a href="https://wezterm.org/multiplexing.html">WezTerm - Multiplexing</a></li>
+      <li><a href="https://wezterm.org/config/files.html">WezTerm - Lua Configuration</a></li>
+      <li><a href="https://wezterm.org/cli/general.html">WezTerm - CLI Reference</a></li>
+      <li><a href="https://wezterm.org/contributing.html">WezTerm - Contributing Guide</a></li>
+      <li><a href="https://github.com/wezterm/wezterm/discussions">WezTerm - GitHub Discussions</a></li>
+    </ul>
   </section>
 
   <footer>
